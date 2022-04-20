@@ -1,18 +1,10 @@
-## Getting Started
+## Chess Simulator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This Java program is a simulation of the game of chess.
 
-## Folder Structure
+This is a school project for CS213 Software Methodolody at Rutgers University in Spring 2019.
 
-The workspace contains two folders by default, where:
+## Instructions
+The board will be printed to the terminal when you run Chess.java. Each chess piece has the format "COLOR+PIECE" (e.g. a black queen is "bQ"). An empty space is either represented by the string "  " or "##" depending on the color of the tile.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The game of chess can be played in console via user input (e.g. "a2 a3" to move the pawn from A2 to A3). If the input string is invalid, you'll be asked to input again. The game will automatically determine "check" & "checkmate" state each move, and disable moves that does not break the check status.
